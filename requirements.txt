@@ -1,0 +1,7 @@
+requests
+lxml
+python-dateutil
+Flask_restful
+flask_cors
+gunicorn
+inotify
