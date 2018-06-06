@@ -8,6 +8,7 @@ URL = "http://localhost:8111/day/"
 def getDay():
     resp = requests.get(URL)
     result = resp.json()
+    print(result)
     return(result.get('holiday'), True)
 
 if __name__ == "__main__":
