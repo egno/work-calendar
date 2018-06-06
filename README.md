@@ -41,3 +41,7 @@ http://localhost:8111/day/2018-06-09/
 *default* - True когда нет данных с сайта gov.ru и значение вычислено только по дню недели
 
 http://localhost:8111/update/ - Запрашивает обновление календаря с сайта [data.gov.ru](http://data.gov.ru/)
+
+## TODO
+
+Add personal calendar and sync it with Google.
