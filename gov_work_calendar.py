@@ -50,6 +50,10 @@ class GovCalendar(WorkCalendar):
             my_list = list(cr)
             headers = my_list[0]
             data = my_list[1:]
-            self._parseData(headers, data)
+            try:
+                self._parseData(headers, data)
+            except Exception as e:
+                print('PARSE ERROR', e)
+                return({'status':'error'})
 
         return({'status':'updated'})

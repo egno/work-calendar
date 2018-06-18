@@ -5,15 +5,14 @@ import sys
 
 URL = "http://localhost:8111/day/"
 
-def getDay():
+def isHoliday():
     resp = requests.get(URL)
     result = resp.json()
-    print(result)
-    return(result.get('holiday'), True)
+    return(result.get('holiday', True))
 
 if __name__ == "__main__":
-    if getDay():
-        sys.exit(0)
-    else:
+    if isHoliday():
         sys.exit(1)
+    else:
+        sys.exit(0)
 

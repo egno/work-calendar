@@ -31,6 +31,8 @@ class WorkCalendar(object):
         if not strong:
             default = self._generateDate(requestDate)
         result = self.data.get(requestDate, default)
+        result['date'] = requestDate.isoformat()
+        print('Request date: ', requestDate)
         return(result)
 
 
