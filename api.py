@@ -12,15 +12,18 @@ api = Api(app)
 
 calendar = GovCalendar()
 
+
 class Today(Resource):
     def get(self):
         date = datetime.date.today()
         return(calendar.date(date))
 
+
 class Day(Resource):
     def get(self, day):
         date = dateutil.parser.parse(day).date()
         return(calendar.date(date))
+
 
 class Update(Resource):
     def get(self):
@@ -34,4 +37,5 @@ api.add_resource(Update, '/update/')
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='8111')
+    # app.run(host='0.0.0.0', port='8080')
+    app.run()

@@ -5,9 +5,9 @@ services:
    restart: always
    build: .
    expose:
-     - "8000"
+     - "80"
    volumes:
      - ".:/app"
    ports:
-     - "8111:8000"
-   command: gunicorn --reload -w 2 -b :8000 api:app
+     - "8111:80"
+   command: gunicorn --reload -w 1 -b :80 api:app
