@@ -15,9 +15,9 @@ Simply use docker or docker-compose
 
 ### Examples
 
-https://datazen.katren.ru/calendar/day/
+https://my_host/calendar/day/
 
-https://datazen.katren.ru/calendar/day/2018-06-09/
+https://my_host/calendar/day/2018-06-09/
 
 It returns JSON structure:
 
@@ -25,7 +25,7 @@ _holiday_: True or False
 
 _default_: True when the calendar from gov.ru is not loaded
 
-https://datazen.katren.ru/calendar/update/ - It requests data update from [data.gov.ru](http://data.gov.ru/)
+https://my_host/calendar/update/ - It requests data update from [data.gov.ru](http://data.gov.ru/)
 
 ## (RU)
 
@@ -34,9 +34,9 @@ https://datazen.katren.ru/calendar/update/ - It requests data update from [data.
 
 ### Примеры запросов
 
-https://datazen.katren.ru/calendar/day/
+https://my_host/calendar/day/
 
-https://datazen.katren.ru/calendar/day/2018-06-09/
+https://my_host/calendar/day/2018-06-09/
 
 Возвращается JSON:
 
@@ -44,7 +44,7 @@ _holiday_: True or False
 
 _default_ - True когда нет данных с сайта gov.ru и значение вычислено только по дню недели
 
-https://datazen.katren.ru/calendar/update/ - Запрашивает обновление календаря с сайта [data.gov.ru](http://data.gov.ru/)
+https://my_host/calendar/update/ - Запрашивает обновление календаря с сайта [data.gov.ru](http://data.gov.ru/)
 
 ## TODO
 
